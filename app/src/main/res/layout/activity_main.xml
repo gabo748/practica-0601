@@ -6,13 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="0dp"
+        android:background="#D4F4F0"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/logoufg"
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            app:srcCompat="@drawable/ufglogocorporativvohorizontal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/fotogabrielCampos"
+                android:layout_width="104dp"
+                android:layout_height="101dp"
+                app:srcCompat="@drawable/gabrielcampos"></ImageView>
+
+            <TextView
+                android:id="@+id/bioname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="0dp"
+                android:text="Gabriel Eduardo Campos Lopez"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="50dp"
+                android:gravity="start|top"
+                android:inputType="text|textMultiLine"
+                android:maxEms="15"
+                android:maxLines="15"
+                android:text="Estudiante de Ing desarrollo de software, iOS developer y muy interesado en todas las tecnologias con apple UIKIT, SwiftIU, Combine" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/androidicon"
+            android:layout_width="239dp"
+            android:layout_height="516dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/androidbrazocruzado"></ImageView>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
